@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import EmployeeRow from "./EmployeeRow";
+import moment from "moment";
 import API from "../utils/API";
 
 class Search extends Component {
@@ -34,7 +35,7 @@ class Search extends Component {
                             name={users.name.first + " " + users.name.last} 
                             phone={users.cell}
                             email={users.email}
-                            dob={users.dob.date}
+                            dob={moment(users.dob.date).format("MM-DD-YYYY")}
                         />
                         // <div key={users.dob.date}>
                         // <div>{users.name.title}</div>
