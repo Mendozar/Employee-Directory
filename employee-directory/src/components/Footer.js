@@ -3,8 +3,11 @@ import "../styles/Footer.css"
 
 function Footer() {
     return (
-      <footer className="bg-dark footer text-light">
-        FSC WEB DESIGN 2020
+      <footer className="bg-dark footer text-white">
+        <div className="card-header bg-dark text-white">
+            FSC WEB DESIGN 2020
+        </div>
+
       </footer>
     );
   }
