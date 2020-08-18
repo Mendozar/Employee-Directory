@@ -3,6 +3,7 @@ import EmployeeRow from "./EmployeeRow";
 import moment from "moment";
 import API from "../utils/API";
 import SearchBox from "./SeachBox";
+import Titles from "./Titles";
 
 class Search extends Component {
     state = {
@@ -14,18 +15,36 @@ class Search extends Component {
         sorted: false
     };
 
-    async componentDidMount() {
-        await API.getEmployee()
-        .then(res =>  {console.log(res.data)
+    componentDidMount() {
+        API.getEmployee()
+        .then(res =>  {
+            // console.log(res.data)
             this.setState({ users: res.data.results, loading: false })
         })
         .catch(err => console.log(err));
     }
 
     handleInputChange = event => {
-        console.log(event.target.value)
-        this.setState({ filterdUsers: event.target.value });
+        let { users, search } = this.state;
+        let searchEmployee = users.filter(sorted => {
+            return (
+               sorted.name.first.toLowerCase().includes(search.toLowerCase())
+            )
+        })
+        // this.setState({filteredUsers: searchEmployee})
+        // console.log(event.target.value)
+        this.setState({ search: event.target.value });
+        this.setState({ filterdUsers: searchEmployee });
+        console.log(this.state.filterdUsers)
     };
+
+    // startSort = event => {
+    //     this.setState({ search: event.target.value }, () => {
+    //       this.sortEmp();
+    //       this.setState({ sorted: true });
+    //     });
+    //   };
+    
 
     render() {
         return (
@@ -36,6 +55,7 @@ class Search extends Component {
                  ): ( 
                 <div>
                     <SearchBox handleInput={this.handleInputChange}/>
+                    <Titles/>
                     {this.state.users.map(users => (
 
                         <EmployeeRow
