@@ -35,17 +35,43 @@ class Search extends Component {
             // console.log(this.state.filterdUsers)
     };
 
+
     handleSort = () => {
+        if (this.state.order === "descend") {
+            this.setState({ order: "asc"})
+        } else {
+            this.setState({ order: "descend"})
+        }
+
+        
         let { users, order } = this.state;
-        console.log("trying to sort")
-        users.sort(function(a, b) {
-            // var textA = a.name.first.toLowerCase();
-            // var textB = b.name.first.toLowerCase();
-            const isReversed = (order === "asc") ? 1 : -1 
-            return console.log(isReversed * a.name.first.localeCompare(b.name.first))
-                // (textA < textB) ? -1 : (textA > textB) ? 1 : 0
-                
-        })
+
+        function compare( a, b ) {
+            if (order === "asc") {
+                if ( a.name.first < b.name.first )
+                {    return -1;  
+              }  
+              if ( a.name.last > b.name.last )
+              {    
+                  return 1;  
+              }  
+              return 0;
+            } else {
+                if ( a.name.first > b.name.first )
+                {    return -1;  
+              }  
+              if ( a.name.last < b.name.last )
+              {    
+                  return 1;  
+              }  
+              return 0;
+
+            }
+        
+        }
+        const filtered = users.sort( compare );
+                        
+        console.log(filtered)
     }
 
     searchEmployee = () => {
