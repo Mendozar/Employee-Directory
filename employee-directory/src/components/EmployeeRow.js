@@ -20,7 +20,10 @@ function EmployeeRow(props) {
           </div>
           <div className="col-3 userEmail">
             <p>
-              {props.email}
+              <a href={"mailto:" + props.email} target="__blank">
+                {props.email}
+              </a>
+                
             </p>
           </div>
           <div className="col-2 userDob">

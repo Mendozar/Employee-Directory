@@ -5,9 +5,10 @@ function SearchBox(props) {
     return (
         <div className="search">
             <input 
+            placeholder="Search for Employee"
+            type="search"
             onChange={props.handleInput} 
-            type="text"
-            placeholder="Search for Employee"/>
+            />
         </div>
     )
 }

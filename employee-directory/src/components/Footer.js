@@ -5,7 +5,7 @@ function Footer() {
     return (
       <footer className="bg-dark footer text-white">
         <div className="card-header bg-dark text-white">
-            FSC WEB DESIGN 2020
+        &copy; FSC 2020
         </div>
 
       </footer>
