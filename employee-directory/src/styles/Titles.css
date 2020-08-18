@@ -1,0 +1,4 @@
+.image, .name, .phone, .email, .dob {
+    text-align: center;
+    font-weight: bolder;
+}

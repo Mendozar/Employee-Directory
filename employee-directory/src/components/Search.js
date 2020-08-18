@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import EmployeeRow from "./EmployeeRow";
-// import Wrapper from "./Wrapper";
 import API from "../utils/API";
 
 class Search extends Component {
@@ -28,15 +27,24 @@ class Search extends Component {
                  ): ( 
                 <div>
                     {this.state.users.map(users => (
-                        <div key={users.dob.date}>
-                        <div>{users.name.title}</div>
-                        <div>{users.name.first}</div>
-                        <div>{users.name.last}</div>
-                        <div>{users.cell}</div>
-                        <div>{users.email}</div>
-                        <div>{users.dob.date}</div>
-                        <img src={users.picture.large} alt={users.name.first} />
-                        </div>
+
+                        <EmployeeRow
+                            key={users.dob.date}
+                            img={users.picture.medium}
+                            name={users.name.first + " " + users.name.last} 
+                            phone={users.cell}
+                            email={users.email}
+                            dob={users.dob.date}
+                        />
+                        // <div key={users.dob.date}>
+                        // <div>{users.name.title}</div>
+                        // <div>{users.name.first}</div>
+                        // <div>{users.name.last}</div>
+                        // <div>{users.cell}</div>
+                        // <div>{users.email}</div>
+                        // <div>{users.dob.date}</div>
+                        // <img src={users.picture.large} alt={users.name.first} />
+                        // </div>
                     ))}    
 
                 </div>    
