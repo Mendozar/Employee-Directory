@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hoffman1200/Homework-19/static/css/main.03bd0d11.chunk.css",
-    "main.js": "/hoffman1200/Homework-19/static/js/main.9122c1c6.chunk.js",
-    "main.js.map": "/hoffman1200/Homework-19/static/js/main.9122c1c6.chunk.js.map",
-    "runtime-main.js": "/hoffman1200/Homework-19/static/js/runtime-main.aaf084d6.js",
-    "runtime-main.js.map": "/hoffman1200/Homework-19/static/js/runtime-main.aaf084d6.js.map",
-    "static/js/2.7f0e3670.chunk.js": "/hoffman1200/Homework-19/static/js/2.7f0e3670.chunk.js",
-    "static/js/2.7f0e3670.chunk.js.map": "/hoffman1200/Homework-19/static/js/2.7f0e3670.chunk.js.map",
-    "index.html": "/hoffman1200/Homework-19/index.html",
-    "precache-manifest.df2a2a095ba8eb59984f7450cf49b652.js": "/hoffman1200/Homework-19/precache-manifest.df2a2a095ba8eb59984f7450cf49b652.js",
-    "service-worker.js": "/hoffman1200/Homework-19/service-worker.js",
-    "static/css/main.03bd0d11.chunk.css.map": "/hoffman1200/Homework-19/static/css/main.03bd0d11.chunk.css.map",
-    "static/js/2.7f0e3670.chunk.js.LICENSE.txt": "/hoffman1200/Homework-19/static/js/2.7f0e3670.chunk.js.LICENSE.txt"
+    "main.css": "/hoffman1200/employee-directory/static/css/main.03bd0d11.chunk.css",
+    "main.js": "/hoffman1200/employee-directory/static/js/main.d94b7598.chunk.js",
+    "main.js.map": "/hoffman1200/employee-directory/static/js/main.d94b7598.chunk.js.map",
+    "runtime-main.js": "/hoffman1200/employee-directory/static/js/runtime-main.483fc654.js",
+    "runtime-main.js.map": "/hoffman1200/employee-directory/static/js/runtime-main.483fc654.js.map",
+    "static/js/2.7f0e3670.chunk.js": "/hoffman1200/employee-directory/static/js/2.7f0e3670.chunk.js",
+    "static/js/2.7f0e3670.chunk.js.map": "/hoffman1200/employee-directory/static/js/2.7f0e3670.chunk.js.map",
+    "index.html": "/hoffman1200/employee-directory/index.html",
+    "precache-manifest.537a93afc729479727b2cb0545a15c86.js": "/hoffman1200/employee-directory/precache-manifest.537a93afc729479727b2cb0545a15c86.js",
+    "service-worker.js": "/hoffman1200/employee-directory/service-worker.js",
+    "static/css/main.03bd0d11.chunk.css.map": "/hoffman1200/employee-directory/static/css/main.03bd0d11.chunk.css.map",
+    "static/js/2.7f0e3670.chunk.js.LICENSE.txt": "/hoffman1200/employee-directory/static/js/2.7f0e3670.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aaf084d6.js",
+    "static/js/runtime-main.483fc654.js",
     "static/js/2.7f0e3670.chunk.js",
     "static/css/main.03bd0d11.chunk.css",
-    "static/js/main.9122c1c6.chunk.js"
+    "static/js/main.d94b7598.chunk.js"
   ]
 }
